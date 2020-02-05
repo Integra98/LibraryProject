@@ -1,0 +1,46 @@
+﻿@model Library.Models.Catalog.AssetIndexModel
+<div id="assets">
+    <div style="display: flex;">
+        <h3>Library Catalog</h3>
+        <form asp-controller="Catalog" asp-action="Index" style="margin-left:40%;">
+            <h5>
+                Title: <input type="text" name="SearchString">
+                <input type="submit" class="btn btn-outline-primary" value="Filter" />
+            </h5>
+        </form>
+    </div>
+    
+    <div style="padding:10px;">
+        <a class="btn btn-lg btn-outline-success" role="button" asp-area="" asp-controller="Catalog" asp-action="Create">Add asset</a>
+    </div>
+
+    <div id="assetsTable">
+        <table class="table table-condensed" id="catalogIndexTable">
+            <thead>
+                <tr>
+                    <th>Image</th>
+                    <th>Title</th>
+                    <th>Author / Director</th>
+                    <th>Dewey Call Number</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var asset in @Model.Assets)
+                {
+                    <tr class="assetRow">
+                        <td class="">
+                            <div>
+                                <a asp-controller="Catalog" asp-action="Detail" asp-route-id="@asset.Id">
+                                    <img src="@asset.ImageUrl" class="imageCell" />
+                                </a>
+                            </div>
+                        </td>
+                        <td class="">@asset.Title</td>
+                        <td class="">@asset.AuthorOrDirector</td>
+                        <td class="">@asset.DeweyCallNumber</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

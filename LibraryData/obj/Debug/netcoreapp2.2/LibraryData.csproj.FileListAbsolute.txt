@@ -1,0 +1,11 @@
+C:\My files\ASP.NET\Library\LibraryData\bin\Debug\netcoreapp2.2\LibraryData.deps.json
+C:\My files\ASP.NET\Library\LibraryData\bin\Debug\netcoreapp2.2\LibraryData.dll
+C:\My files\ASP.NET\Library\LibraryData\obj\Debug\netcoreapp2.2\LibraryData.csproj.CoreCompileInputs.cache
+C:\My files\ASP.NET\Library\LibraryData\obj\Debug\netcoreapp2.2\LibraryData.AssemblyInfoInputs.cache
+C:\My files\ASP.NET\Library\LibraryData\obj\Debug\netcoreapp2.2\LibraryData.AssemblyInfo.cs
+C:\My files\ASP.NET\Library\LibraryData\obj\Debug\netcoreapp2.2\LibraryData.csprojAssemblyReference.cache
+C:\My files\ASP.NET\Library\LibraryData\bin\Debug\netcoreapp2.2\LibraryData.runtimeconfig.json
+C:\My files\ASP.NET\Library\LibraryData\bin\Debug\netcoreapp2.2\LibraryData.runtimeconfig.dev.json
+C:\My files\ASP.NET\Library\LibraryData\bin\Debug\netcoreapp2.2\LibraryData.pdb
+C:\My files\ASP.NET\Library\LibraryData\obj\Debug\netcoreapp2.2\LibraryData.dll
+C:\My files\ASP.NET\Library\LibraryData\obj\Debug\netcoreapp2.2\LibraryData.pdb

@@ -1,0 +1,44 @@
+﻿@model Library.Models.Patron.PatronCreateModel
+
+<h1>Add new Patron</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post" action="Add">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label class="control-label">First Name</label>
+                <input asp-for="FirstName" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label class="control-label">Last Name</label>
+                <input asp-for="LastName" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Address" class="control-label"></label>
+                <input asp-for="Address" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Telephone" class="control-label"></label>
+                <input asp-for="Telephone" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label class="control-label">Library Card Id</label>
+                <input asp-for="LibraryCardId" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label class="control-label">Home Library Id</label>
+                <input asp-for="HomeLibraryId" class="form-control" />
+            </div>
+           
+            <div class="form-group">
+                <input type="submit" value="Add new patron" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to list</a>
+</div>

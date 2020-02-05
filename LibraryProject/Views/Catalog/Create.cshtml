@@ -1,0 +1,51 @@
+﻿@model Library.Models.Catalog.AssetCreateModel
+
+<h1>Add new Library Asset</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post" action="AddAsset" >
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Title" class="control-label"></label>
+                <input asp-for="Title" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label class="control-label">Author</label>
+                <input asp-for="AuthorOrDirector" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Year" class="control-label"></label>
+                <input asp-for="Year" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="ISBN" class="control-label"></label>
+                <input asp-for="ISBN" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label class="control-label">Dewey Call Number</label>
+                <input asp-for="DeweyCallNumber" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Cost" class="control-label"></label>
+                <input asp-for="Cost" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label class="control-label">Current Location</label>
+                <input asp-for="CurrentLocationId" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="ImageUrl" class="control-label"></label>
+                <input asp-for="ImageUrl" class="form-control" />
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Add library asset" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to list</a>
+</div>

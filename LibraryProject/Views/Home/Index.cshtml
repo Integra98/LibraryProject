@@ -1,0 +1,55 @@
+﻿@{
+    ViewData["Title"] = "HelLib";
+}
+
+<h3>Welcome to HelLib</h3>
+
+<div class="mdl-grid">
+    <div class="mdl-cell mdl-cell--4-col">
+        <div class="demo-card-square mdl-card mdl-shadow--2dp">
+            <div class="mdl-card__title mdl-card--expand" id="catalog" style="background-image:url(https://socportal.info/media/contentimages/4565bf56d8189541.jpg)">
+                <h2 class="mdl-card__title-text homeLabel">Library Catalog</h2>
+            </div>
+            <div class="mdl-card__supporting-text" >
+                View and manage library assets.
+            </div>
+            <div class="mdl-card__actions mdl-card--border">
+                <a class="mdl-button mdl-button--colored" asp-controller="Catalog" asp-action="Index">
+                    View Catalog
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="mdl-cell mdl-cell--4-col">
+        <div class="demo-card-square mdl-card mdl-shadow--2dp">
+            <div class="mdl-card__title mdl-card--expand" id="patrons" style="background-image:url(http://maskivolosi.ru/wp-content/uploads/2016/10/%D0%9C%D0%BE%D0%BB%D0%BE%D0%B4%D1%8B%D0%B5-%D0%BB%D1%8E%D0%B4%D0%B8-%D1%87%D0%B8%D1%82%D0%B0%D1%8E%D1%82-%D0%BA%D0%BD%D0%B8%D0%B3%D0%B8.jpg)">
+                <h2 class="mdl-card__title-text homeLabel">Patrons</h2>
+            </div>
+            <div class="mdl-card__supporting-text" >
+                View and manage library patron data.
+            </div>
+            <div class="mdl-card__actions mdl-card--border">
+                <a class="mdl-button mdl-button--colored" asp-controller="Patron" asp-action="Index">
+                    View Patrons
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="mdl-cell mdl-cell--4-col">
+        <div class="demo-card-square mdl-card mdl-shadow--2dp">
+            <div class="mdl-card__title mdl-card--expand" id="branches" style="background-image:url(http://www.domax-fahverk.ru/wp-content/uploads/2014/03/KansasCity3.jpg)">
+                <h2 class="mdl-card__title-text homeLabel">Branches</h2>
+            </div>
+            <div class="mdl-card__supporting-text">
+                View and manage HelLib branches.
+            </div>
+            <div class="mdl-card__actions mdl-card--border">
+                <a class="mdl-button mdl-button--colored" asp-controller="Branch" asp-action="Index">
+                    View Branch 
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
